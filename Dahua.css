@@ -2,7 +2,7 @@
 	Global classes
 					*/
 body {
-	background-image: url("iphoneOL.jpg");
+	background-image: url("images/iphoneOL.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
 }
@@ -19,7 +19,7 @@ body {
 	height: 45px;
 	width: 300px;
 	background-color: #A9A9A9;
-	font-family: 'Avenir', sans-serif;
+	font-family: Avenir, sans-serif;
 	color: white;
 	text-shadow: 1px 1px #000000;
 	text-align: center;
@@ -29,13 +29,19 @@ body {
 }
 
 .back-button {
-	border: 1px solid white;
-	width: 50px;
-	height: 25px;
-	background-color: lightgray;
 	float: left;
 	margin-top: 9px;
-	margin-left: 7px;
+	margin-left: 13px;
+}
+
+
+
+
+
+.placeholder1 {
+	float: left;
+	height: 300px;
+	width: 300px;
 }
 
 /*
@@ -44,20 +50,20 @@ body {
 
 
 .i_am {
-				float: left;
-				padding-top: 85px;
-				padding-left: 23px;
-				font-family: 'Avenir', sans-serif;
-				font-size: 18px;
-				font-weight: bold;
-				color: #795548;
+	float: left;
+	padding-top: 85px;
+	padding-left: 23px;
+	font-family: Avenir, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #795548;
 }
 .arrangebox::after {
 	content: "";
 }
 
 .options {
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 30px;
 	color: #FFF3E0;
 	text-align: center;
@@ -75,15 +81,182 @@ body {
 
 
 /* Grandparent main call page */
-#screen {
+#screen-main {
 	height: 530px;
 	width: 300px;
 	margin: 105px 23px;
 	background-color: white;
 }
 
-#profile-bar {
+.profile-bar {
 	height: 100px;
 	width: 300px;
+	background-color: rgb(243, 102, 114, 0.726);
+}
+
+.profile-pic-background{
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	height: 80px;
+  	width: 80px;
+  	background-color: rgb(245, 235, 235);
+  	border-radius: 50%;
+}
+
+.profile-pic-background img{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
+
+.user-name {
+	height: 40px;
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.user-name h3{
+	padding: 0px;
+	font-size: 25px;
+	color: white;
+}
+
+.add-friend {
+	float: left;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
 	background-color: pink;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+
+
+.add-friend h3{
+	font-size: 36px;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 0px;
+	color: white;
+}
+
+.video {
+	height: 190px;
+	width: 300px;
+}
+
+.video-img {
+	height: 150px;
+	float: left;
+}
+
+.video-img img{
+	margin-top: 15px;
+	margin-left: 85px;
+	margin-right: 25px;
+	height: 130px;
+	width: 130px;
+	float: left;
+}
+
+#back-button{
+	float: left;
+	margin-left: 7px;
+	margin-top: 7px;
+	padding-left: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 30px;
+	height: 23px;
+	border: 1px solid white;
+	background-color: rgb(243, 102, 114, 0.726);
+	color: white;
+	text-shadow: 1px 1px black;
+   }
+
+.video-name {
+	margin-top: 0px;
+	float: left;
+	height: 20px;
+	width: 300px;
+}
+
+.video-name p{
+	margin-top: 0px;
+	float: left;
+	height: 20px;
+	width: 300px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.uploader-name {
+	float: left;
+	height: 20px;
+	width: 300px;
+}
+
+.uploader-name p{
+	margin-top: 0px;
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+
+.bottom-bar {
+	background-color: pink;
+	float: left;
+	height: 49px;
+	width: 99px;
+	border: 0.5px solid white;
+}
+
+.bottom-bar h3{
+	float: left;
+	width: 99px;
+	height: 25px;
+	margin-top: 12px;
+	text-align: center;
+	color: white;
+}
+
+.bottom-bar-current {
+	background-color: white;
+	float: left;
+	height: 49px;
+	width: 99px;
+	border: 0.5px solid rgb(243, 102, 114, 0.726);
+}
+
+.bottom-bar-current h3{
+	float: left;
+	width: 99px;
+	height: 25px;
+	margin-top: 12px;
+	text-align: center;
+	color: rgb(243, 102, 114, 0.726);
+}
+
+
+/**/
+
+.fullwidthbtn {
+	font-family: Roboto, sans-serif;
+	height: 70px;
+	font-size: 30px;
+	color: #FFF3E0;
+	float: left;
+	text-align: center;
+	margin-left: 25px;
+}
+
+.fullwidthbtn p {
+	padding-top: 5px;
+	width: 250px;
+	height: 40px;
+	background-color: #E65100;
+	box-shadow: 1px 3px 5px #4E342E;
 }
