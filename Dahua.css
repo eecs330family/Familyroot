@@ -103,6 +103,14 @@ button:hover {
 	padding: 0 10px;
 }
 
+.container2 {
+	padding: 70px 30px;
+}
+
+.container3 {
+	padding: 0 10px;
+}
+
 button {
 	background-color: #E65100;
 	width: 100%;
