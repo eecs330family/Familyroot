@@ -19,7 +19,7 @@ body {
 	height: 45px;
 	width: 300px;
 	background-color: #A9A9A9;
-	font-family: 'Avenir', sans-serif;
+	font-family: Avenir, sans-serif;
 	color: white;
 	text-shadow: 1px 1px #000000;
 	text-align: center;
@@ -29,13 +29,15 @@ body {
 }
 
 .back-button {
-	border: 1px solid white;
-	width: 50px;
-	height: 25px;
-	background-color: lightgray;
 	float: left;
 	margin-top: 9px;
-	margin-left: 7px;
+	margin-left: 13px;
+}
+
+.placeholder1 {
+	float: left;
+	height: 300px;
+	width: 300px;
 }
 
 /*
@@ -47,7 +49,7 @@ body {
 				float: left;
 				padding-top: 85px;
 				padding-left: 23px;
-				font-family: 'Avenir', sans-serif;
+				font-family: Avenir, sans-serif;
 				font-size: 18px;
 				font-weight: bold;
 				color: #795548;
@@ -57,7 +59,7 @@ body {
 }
 
 .options {
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 30px;
 	color: #FFF3E0;
 	text-align: center;
@@ -69,6 +71,24 @@ body {
 	padding-top: 50px;
 	width: 250px;
 	height: 80px;
+	background-color: #E65100;
+	box-shadow: 1px 3px 5px #4E342E;
+}
+
+.fullwidthbtn {
+	font-family: Roboto, sans-serif;
+	height: 70px;
+	font-size: 30px;
+	color: #FFF3E0;
+	float: left;
+	text-align: center;
+	margin-left: 25px;
+}
+
+.fullwidthbtn p {
+	padding-top: 5px;
+	width: 250px;
+	height: 40px;
 	background-color: #E65100;
 	box-shadow: 1px 3px 5px #4E342E;
 }
