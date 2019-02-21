@@ -5,6 +5,7 @@ body {
 	background-image: url("images/iphoneOL.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
+	color: #795548;
 }
 
 
@@ -18,7 +19,7 @@ body {
 .head-bar {
 	height: 45px;
 	width: 300px;
-	background-color: #A9A9A9;
+	background-color: rgb(243, 102, 114, 0.726);
 	font-family: Avenir, sans-serif;
 	color: white;
 	text-shadow: 1px 1px #000000;
@@ -32,50 +33,94 @@ body {
 	float: left;
 	margin-top: 9px;
 	margin-left: 13px;
+	color: white;
 }
-
-
-
-
 
 .placeholder1 {
 	float: left;
 	height: 300px;
 	width: 300px;
+	border-style: dashed;
 }
 
+.placeholder2 {
+	float: left;
+	height: 200px;
+	width: 300px;
+	border-style: dashed;
+}
 /*
 	Logging in
 			*/
 
-
-.i_am {
-	float: left;
-	padding-top: 85px;
-	padding-left: 23px;
-	font-family: Avenir, sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	color: #795548;
-}
 .arrangebox::after {
 	content: "";
 }
 
-.options {
+.bigbtn {
+	font-family: Roboto, sans-serif;
+	height: 120px;
+	font-size: 30px;
+	color: #FFF3E0;
+	float: left;
+	text-align: center;
+}
+
+#uploadicon {
+	height: 120px;
+	width: 120px;
+	margin: 20px 90px;
+	border-style: dashed;
+}
+
+#newimgB {
+	height: 24px;
+	width: 24px;
+	margin-left: 48px;
+	margin-top: 48px;
+}
+
+#newimgA {
+	height: 24px;
+	width: 24px;
+	margin-left: 48px;
+	margin-top: 48px;
+}
+
+input[type = text], input[type = password], input[type = tel] {
+	width: 100%;
+	padding: 10px 5px;
+	margin: 2px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+	padding: 0 10px;
+}
+
+.container2 {
+	padding: 70px 30px;
+}
+
+.container3 {
+	padding: 0 10px;
+}
+
+button {
+	background-color: #E65100;
+	width: 100%;
+	height: 50px;
+	margin: 15px 0;
+	border: none;
 	font-family: Roboto, sans-serif;
 	font-size: 30px;
 	color: #FFF3E0;
-	text-align: center;
-	padding-top: 90px;
-	margin-left: 23px;
-}
-
-.options p {
-	padding-top: 50px;
-	width: 250px;
-	height: 80px;
-	background-color: #E65100;
 	box-shadow: 1px 3px 5px #4E342E;
 }
 
@@ -260,3 +305,38 @@ body {
 	background-color: #E65100;
 	box-shadow: 1px 3px 5px #4E342E;
 }
+/*
+	Profile Page
+		*/
+
+.container1 {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.card_profile {
+	height: 300px;
+}
+
+.card_name {
+	padding-top: 30px;
+	font-family: 'Avenir', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #424242;
+	text-align: center;
+}
+
+
+.user-info {
+	margin-top: 10px;
+	height: 300px;
+	width: 300px;
+}
+
+.user-stats {
+	font-family: 'Avenir', sans-serif;
+	margin-top: 5px;
+	text-align: center;
+	color: #757575;
