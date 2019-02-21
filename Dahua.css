@@ -72,3 +72,18 @@ body {
 	background-color: #E65100;
 	box-shadow: 1px 3px 5px #4E342E;
 }
+
+
+/* Grandparent main call page */
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	background-color: white;
+}
+
+#profile-bar {
+	height: 100px;
+	width: 300px;
+	background-color: pink;
+}
