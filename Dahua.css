@@ -115,16 +115,39 @@ button {
 	box-shadow: 1px 3px 5px #4E342E;
 }
 
-.submitbtn {
-	height: 40px;
+/*
+	Profile Page
+		*/
+
+.container1 {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.card_profile {
+	height: 300px;
+}
+
+.card_name {
+	padding-top: 50px;
+	font-family: 'Avenir', sans-serif;
 	font-size: 25px;
-	color: #FFF3E0;
+	font-weight: bold;
+	color: #424242;
+	text-align: center;
 }
 
-.container2 {
-	padding: 70px 30px;
+
+.user-info {
+	margin-top: 20px;
+	height: 300px;
+	width: 300px;
 }
 
-.container3 {
-	padding: 20px 30px;
+.user-stats {
+	font-family: 'Avenir', sans-serif;
+	margin-top: 5px;
+	text-align: center;
+	color: #757575;
 }
