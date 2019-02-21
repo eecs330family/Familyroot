@@ -19,7 +19,7 @@ body {
 .head-bar {
 	height: 45px;
 	width: 300px;
-	background-color: #A9A9A9;
+	background-color: rgb(243, 102, 114, 0.726);
 	font-family: Avenir, sans-serif;
 	color: white;
 	text-shadow: 1px 1px #000000;
@@ -33,6 +33,7 @@ body {
 	float: left;
 	margin-top: 9px;
 	margin-left: 13px;
+	color: white;
 }
 
 .placeholder1 {
@@ -138,7 +139,7 @@ button {
 }
 
 .card_name {
-	padding-top: 50px;
+	padding-top: 30px;
 	font-family: 'Avenir', sans-serif;
 	font-size: 25px;
 	font-weight: bold;
@@ -148,7 +149,7 @@ button {
 
 
 .user-info {
-	margin-top: 20px;
+	margin-top: 10px;
 	height: 300px;
 	width: 300px;
 }
