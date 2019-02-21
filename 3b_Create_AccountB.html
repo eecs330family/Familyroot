@@ -8,21 +8,27 @@
     <body>
         <div id= "screen">
             <div class = "head-bar">
-                <a href = "index.html">
+                <a href = "1_Grandchild_parent.html">
                     <div class="back-button"><i class="material-icons">arrow_back_ios</i></div>
                 </a>
             </div>
-            <div class = "placeholder2">
-                This is placeholder2. Helllo WOrlD!
+            <div id = "uploadicon">
+                <i id = "newimgB", class="material-icons">add_photo_alternate</i>
             </div>
             <div class = "container">
+                <label for = "name"><b>Name:</b></label>
+                <input type = "text" name = "name" required>
+
                 <label for = "usrname"><b>User Name:</b></label>
-                <input type = "text" name = "usrname" required>
+                <input type = "text" name = "usrname">
 
                 <label for = "psw"><b>Password:</b></label>
                 <input type = "password" name = "psw" required>
 
-                <button type = "submit"><b> Login</b> </button>
+                <label for = "Phone #"><b>Phone #:</b></label>
+                <input type = "tel" name = "Phone #">
+
+                <button type = "submit" class ="submitbtn"><b> Register</b> </button>
             </div>
         </div>
     </body>
