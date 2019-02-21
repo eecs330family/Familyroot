@@ -2,7 +2,7 @@
 	Global classes 
 					*/
 body {
-	background-image: url("iphoneOL.jpg");
+	background-image: url("images/iphoneOL.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
 }
@@ -14,13 +14,64 @@ body {
 	margin: 105px 23px;
 }
 
-#profile-bar {
-	height: 100px;
-	width: 300px;
+#bbutton-format{
+	float: left;
+	height:50px;
+	width:100%;
 	background-color: pink;
-   }
-
-
-#back-button{
-	
 }
+#back-button{
+	margin-left: 7px;
+	margin-top: 7px;
+	padding-left: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 30px;
+	height: 23px;
+	border: 1px solid white;
+	background-color: lightgray;
+}
+#vlog-format{
+	float: left;
+	width: 100%;
+	height:430px;
+}
+.vlog{
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 290px;
+	height: 400px;
+	overflow: hidden;
+	background-position: center center;
+	border: 1px solid lightgray;
+}
+
+
+#icon-format{
+	float: left;
+	width: 100%;
+	height:60px;
+}
+
+#fav{
+	margin-left: 130px;
+	margin-left: 130px;
+	margin-top: 0px;
+}
+
+.material-icons.md-40 { 
+	font-size: 40px; 
+	color: red;
+}
+
+#attempt{
+}
+
+
+
+
+
+
+
