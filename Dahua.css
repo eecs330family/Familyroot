@@ -29,6 +29,14 @@ body {
 	padding-top: 2.75px;
 }
 
+.head-bar p{
+	padding-top: 10px;
+	margin-right: 25px;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	color: white;
+}
+
 .back-button {
 	float: left;
 	margin-top: 9px;
@@ -48,6 +56,54 @@ body {
 	height: 200px;
 	width: 300px;
 	border-style: dashed;
+}
+
+/*
+	GC Schedule a Call
+			*/
+
+.popup {
+  position: relative;
+  display: inline-block;
+}
+
+.popup .popuptext {
+		visibility: hidden;
+		width: 180px;
+	  background-color: #FFF3E0;
+		color: #E65100;
+	  text-align: center;
+		font-size: 18px;
+	  border-radius: 5px;
+	  position: relative;
+		margin-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 58px;
+		padding-right: 58px;
+	}
+
+	.popup .popuptext::after {
+  content: "";
+  position: absolute;
+}
+
+.popup .show {
+  visibility: visible;
+	color: #E65100;
+	text-align: center;
+}
+
+.required {
+	float: right;
+	font-size: 13px;
+	color: #E65100;
+}
+
+#timezone1 {
+	float: top;
+	font-size: 10px;
+	margin-top: 5px;
 }
 /*
 	Logging in
@@ -113,7 +169,7 @@ button:hover {
 }
 
 .container {
-	padding: 0 10px;
+	padding: 10 10px;
 }
 
 .container2 {
