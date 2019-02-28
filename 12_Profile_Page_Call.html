@@ -7,25 +7,25 @@
 
     </head>
 
-    <body>
+    <body onload = "setTimeout(exec, 30)">
         <div class="container1">
           <div class="head-bar">
-            <a href = "10_GP_Main_Call_Accept.html">
+            <a href = "4_Grandparent_Main.html">
               <div class="back-button"><i class="material-icons">arrow_back_ios</i>
               </div>
             </a >
           </div>
 
             <div class="card-profile">
-              <img src="Granny Dahua.jpeg" width="300" height="300">
+              <img src="images/Granny Dahua.jpeg" width="300" height="300">
 
-              <div class="card_name">
+              <div class="card_name" id = "card_name">
                 <span>Dahua</span>
               </div>
             </div>
 
             <div class="user-info">
-                  <div class="user-stats">
+                  <div class="user-stats" id = "username">
                     <strong>Username:</strong>
                     <span>DaHua_!</span>
                   </div>
@@ -43,5 +43,12 @@
                 </div>
               </div>
     </body>
-
+    <script>
+        function exec(){
+            var text = localStorage.getItem("inputJSON");
+            obj = JSON.parse(text);
+            document.getElementById("card_name").innerHTML = '<span>' + obj.name + '<span>';
+            document.getElementById("username").innerHTML = '<strong>Username:</strong><span>' + obj.usrname + '</span>';
+        }
+    </script>
 <html>

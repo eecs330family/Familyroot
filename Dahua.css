@@ -150,6 +150,13 @@ body {
 	margin-top: -48px;
 }
 
+#newimgB img {
+	height: 120px;
+	width: 120px;
+	margin-left: -48px;
+	margin-top: -48px;
+}
+
 #timezone {
 	width: 180px;
 	float: left;

@@ -12,15 +12,15 @@
                     <div class="back-button"><i class="material-icons">arrow_back_ios</i></div>
                 </a>
             </div>
-            <div id = "uploadicon">
+            <div id = "uploadicon", onclick = "changeimggp()">
                 <i id = "newimgB", class="material-icons">add_photo_alternate</i>
             </div>
             <div class = "container">
                 <label for = "name"><b>Name:</b></label>
-                <input type = "text" name = "name" required>
+                <input id = "namebox" type = "text" name = "name" required>
 
                 <label for = "usrname"><b>User Name:</b></label>
-                <input type = "text" name = "usrname">
+                <input id = "usrnamebox" type = "text" name = "usrname">
 
                 <label for = "Time Zone"><b>Time Zone:</b></label>
                 <br>
@@ -29,7 +29,9 @@
                 <label for = "psw"><b>Password:</b></label>
                 <input type = "password" name = "psw" required>
 
-                <button type = "submit" class ="submitbtn"><b> Register</b> </button>
+                <a href = "8_Grandchild_Main_Call.html">
+                    <button type = "submit" onmousedown = "storeusername()" class ="submitbtn"><b> Register</b> </button>
+                </a>
             </div>
         </div>
         <script>
@@ -38,7 +40,13 @@
                 document.getElementById("timezone").innerHTML = "GMT " + timezone + ":00";
             }
             function changeimggp() {
-                document.getElementById("newimgB").innerHTML = '<img src="images/IMG_329.jpg" />';
+                document.getElementById("newimgB").innerHTML = '<img src="images/IMG_3407.jpg" />';
+            }
+            function storeusername(){
+                var namee = document.getElementById("namebox").value;
+                var input_value = document.getElementById("usrnamebox").value;
+                inputJSON = JSON.stringify({name: namee, usrname: input_value});
+                localStorage.setItem("inputJSON2", inputJSON);
             }
         </script>
     </body>
