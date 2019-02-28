@@ -17,7 +17,7 @@
             </div>
             <div class = "container">
                 <label for = "name"><b>Name:</b></label>
-                <input type = "text" name = "name" required>
+                <input id = "namebox" type = "text" name = "name" required>
 
                 <label for = "usrname"><b>User Name:</b></label>
                 <input id = "usrnamebox" type = "text" name = "usrname">
@@ -43,8 +43,9 @@
                 document.getElementById("newimgA").innerHTML = '<img src="images/IMG_3299.jpg" />';
             }
             function storeusername(){
+                var namee = document.getElementById("namebox").value;
                 var input_value = document.getElementById("usrnamebox").value;
-                inputJSON = JSON.stringify({name: input_value});
+                inputJSON = JSON.stringify({name: namee, usrname: input_value});
                 localStorage.setItem("inputJSON", inputJSON);
             }
         </script>
