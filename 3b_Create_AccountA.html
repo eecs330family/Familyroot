@@ -5,14 +5,14 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
            rel="stylesheet">
     </head>
-    <body>
+    <body onload = "setTimeout(exec, 3000)">
         <div id= "screen">
             <div class = "head-bar">
                 <a href = "1_Grandchild_parent.html">
                     <div class="back-button"><i class="material-icons">arrow_back_ios</i></div>
                 </a>
             </div>
-            <div id = "uploadicon">
+            <div id = "uploadicon", onclick = "changeimggp()">
                 <i id = "newimgA", class="material-icons">add_photo_alternate</i>
             </div>
             <div class = "container">
@@ -20,18 +20,33 @@
                 <input type = "text" name = "name" required>
 
                 <label for = "usrname"><b>User Name:</b></label>
-                <input type = "text" name = "usrname">
+                <input id = "usrnamebox" type = "text" name = "usrname">
 
+                <label for = "Time Zone"><b>Time Zone:</b></label>
+                <br>
+                <div class = "material-icons">schedule</div>
+                <div id = "timezone">Locating...</div>
                 <label for = "psw"><b>Password:</b></label>
                 <input type = "password" name = "psw" required>
 
-                <label for = "Phone #"><b>Phone #:</b></label>
-                <input type = "tel" name = "Phone #">
-
                 <a href = "4_Grandparent_Main.html">
-                    <button type = "submit" class ="submitbtn"><b> Register</b> </button>
+                    <button type = "submit" onmousedown = "storeusername()", class ="submitbtn"><b> Register</b> </button>
                 </a>
             </div>
         </div>
+        <script>
+            function exec(){
+                timezone = -new Date().getTimezoneOffset()/60;
+                document.getElementById("timezone").innerHTML = "GMT " + timezone + ":00";
+            }
+            function changeimggp() {
+                document.getElementById("newimgA").innerHTML = '<img src="images/IMG_3299.jpg" />';
+            }
+            function storeusername(){
+                var input_value = document.getElementById("usrnamebox").value;
+                inputJSON = JSON.stringify({name: input_value});
+                localStorage.setItem("inputJSON", inputJSON);
+            }
+        </script>
     </body>
 </html>

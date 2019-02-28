@@ -6,13 +6,13 @@
            rel="stylesheet">
     </head>
 
-    <body>
+    <body onload = "setTimeout(exec, 30)">
         <div id="screen-main">
             <div class="profile-bar">
                 <div class="profile-pic-background">
                     <a a href="5_Profile_Page.html"><img src="images/IMG_3299.jpg" /></a>
                 </div>
-                <div class="user-name">
+                <div class="user-name" id  = "user-name">
                     <h3>Dahua</h3>
                 </div>
                 <div class="add-friend">
@@ -59,9 +59,12 @@
                     <h3>VLOG</h3>
                 </div>
             </div>
-
-
-
-
         </div>
+        <script>
+            function exec(){
+                var text = localStorage.getItem("inputJSON");
+                obj = JSON.parse(text);
+                document.getElementById("user-name").innerHTML = '<h3>' + obj.name + '</h3>';
+            }
+        </script>
     </body>

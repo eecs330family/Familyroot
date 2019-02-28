@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
            rel="stylesheet">
     </head>
-    <body>
+    <body onload = "setTimeout(exec, 3000)">
         <div id= "screen">
             <div class = "head-bar">
                 <a href = "1_Grandchild_parent.html">
@@ -22,14 +22,24 @@
                 <label for = "usrname"><b>User Name:</b></label>
                 <input type = "text" name = "usrname">
 
+                <label for = "Time Zone"><b>Time Zone:</b></label>
+                <br>
+                <div class = "material-icons">schedule</div>
+                <div id = "timezone">Locating...</div>
                 <label for = "psw"><b>Password:</b></label>
                 <input type = "password" name = "psw" required>
-
-                <label for = "Phone #"><b>Phone #:</b></label>
-                <input type = "tel" name = "Phone #">
 
                 <button type = "submit" class ="submitbtn"><b> Register</b> </button>
             </div>
         </div>
+        <script>
+            function exec(){
+                timezone = -new Date().getTimezoneOffset()/60;
+                document.getElementById("timezone").innerHTML = "GMT " + timezone + ":00";
+            }
+            function changeimggp() {
+                document.getElementById("newimgB").innerHTML = '<img src="images/IMG_329.jpg" />';
+            }
+        </script>
     </body>
 </html>
