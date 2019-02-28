@@ -1,0 +1,411 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+	color: #795548;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	background-color: rgb(173, 216, 230, 0.1);
+}
+
+.head-bar {
+	height: 45px;
+	width: 300px;
+	background-color: lightblue;
+	font-family: Avenir, sans-serif;
+	color: white;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+}
+.head-bar h1{
+	padding-top: 2.75px;
+}
+
+.back-button {
+	float: left;
+	margin-top: 9px;
+	margin-left: 13px;
+	color: white;
+}
+
+.placeholder1 {
+	float: left;
+	height: 300px;
+	width: 300px;
+	border-style: dashed;
+}
+
+.placeholder2 {
+	float: left;
+	height: 200px;
+	width: 300px;
+	border-style: dashed;
+}
+/*
+	Logging in
+			*/
+
+.arrangebox::after {
+	content: "";
+}
+
+.bigbtn {
+	font-family: Roboto, sans-serif;
+	height: 120px;
+	font-size: 30px;
+	color: #FFF3E0;
+	float: left;
+	text-align: center;
+}
+
+#uploadicon {
+	height: 120px;
+	width: 120px;
+	margin: 20px 90px;
+	border-style: dashed;
+}
+
+#newimgB {
+	height: 24px;
+	width: 24px;
+	margin-left: 48px;
+	margin-top: 48px;
+}
+
+#newimgA {
+	height: 24px;
+	width: 24px;
+	margin-left: 48px;
+	margin-top: 48px;
+}
+
+input[type = text], input[type = password], input[type = tel] {
+	width: 100%;
+	padding: 10px 5px;
+	margin: 2px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+	padding: 0 10px;
+	background-color: rgb(173, 216, 230, 0.1);
+}
+
+.container2 {
+	padding: 70px 30px;
+}
+
+.container3 {
+	padding: 0 10px;
+}
+
+button {
+	background-color: #E65100;
+	width: 100%;
+	height: 50px;
+	margin: 15px 0;
+	border: none;
+	font-family: Roboto, sans-serif;
+	font-size: 30px;
+	color: #FFF3E0;
+	box-shadow: 1px 3px 5px #4E342E;
+}
+
+
+/* Grandparent main call page */
+#screen-main {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	background-color: white;
+}
+
+.profile-bar {
+	height: 100px;
+	width: 300px;
+	background-color: lightblue;
+}
+
+.profile-pic-background{
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	height: 80px;
+  	width: 80px;
+  	background-color: rgb(245, 235, 235);
+  	border-radius: 50%;
+}
+
+.profile-pic-background img{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
+
+.user-name {
+	height: 40px;
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.user-name h3{
+	padding: 0px;
+	font-size: 25px;
+	color: white;
+}
+
+.add-friend {
+	float: left;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: pink;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+
+
+.add-friend h3{
+	font-size: 36px;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 0px;
+	color: white;
+}
+
+.video {
+	height: 190px;
+	width: 300px;
+}
+
+.video-img {
+	height: 150px;
+	float: left;
+}
+
+.video-img img{
+	margin-top: 15px;
+	margin-left: 85px;
+	margin-right: 25px;
+	height: 130px;
+	width: 130px;
+	float: left;
+}
+
+#back-button{
+	float: left;
+	margin-left: 7px;
+	margin-top: 7px;
+	padding-left: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 30px;
+	height: 23px;
+	border: 1px solid white;
+	background-color: rgb(243, 102, 114, 0.726);
+	color: white;
+	text-shadow: 1px 1px black;
+   }
+
+.video-name {
+	margin-top: 0px;
+	float: left;
+	height: 20px;
+	width: 300px;
+}
+
+.video-name p{
+	margin-top: 0px;
+	float: left;
+	height: 20px;
+	width: 300px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.uploader-name {
+	float: left;
+	height: 20px;
+	width: 300px;
+}
+
+.uploader-name p{
+	margin-top: 0px;
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+
+.bottom-bar {
+	background-color: pink;
+	float: left;
+	height: 49px;
+	width: 99px;
+	border: 0.5px solid white;
+}
+
+.bottom-bar h3{
+	float: left;
+	width: 99px;
+	height: 25px;
+	margin-top: 12px;
+	text-align: center;
+	color: white;
+}
+
+.bottom-bar-current {
+	background-color: white;
+	float: left;
+	height: 49px;
+	width: 99px;
+	border: 0.5px solid rgb(243, 102, 114, 0.726);
+}
+
+.bottom-bar-current h3{
+	float: left;
+	width: 99px;
+	height: 25px;
+	margin-top: 12px;
+	text-align: center;
+	color: rgb(243, 102, 114, 0.726);
+}
+
+
+/**/
+
+.fullwidthbtn {
+	font-family: Roboto, sans-serif;
+	height: 70px;
+	font-size: 30px;
+	color: #FFF3E0;
+	float: left;
+	text-align: center;
+	margin-left: 25px;
+}
+
+.fullwidthbtn p {
+	padding-top: 5px;
+	width: 250px;
+	height: 40px;
+	background-color: #E65100;
+	box-shadow: 1px 3px 5px #4E342E;
+}
+/*
+	Profile Page
+		*/
+
+.container1 {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.card_profile {
+	height: 300px;
+}
+
+.card_name {
+	padding-top: 30px;
+	font-family: 'Avenir', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #424242;
+	text-align: center;
+}
+
+
+.user-info {
+	margin-top: 10px;
+	height: 300px;
+	width: 300px;
+}
+
+.user-stats {
+	font-family: 'Avenir', sans-serif;
+	margin-top: 5px;
+	text-align: center;
+	color: #757575;
+}
+
+.user_milestone{
+	margin-top: 15px;
+	float: left;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 7px;
+}
+.milestone_textbox{
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 260px;
+	height: 68px;
+	word-wrap: break-word;
+	border: 1px solid lightgray;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 15px;
+	color: black;
+	background-color: rgb(173, 216, 230, 0.7);
+}
+
+.reward-exp-wrapper{
+	margin-top: 10px;
+	float: left;
+	width: 50%;
+	height: 187.5px;
+	margin-bottom: 0px;
+}
+
+.reward-icon{
+	height: 130px;
+	width: 130px;
+	margin-left: 9px;
+	margin-right: 9px;
+	border: 1px solid lightgrey;
+	margin-bottom: 0px;
+
+}
+.explanation{
+	width: 150px;
+	height: 20px;
+	padding-top: 0px;
+	margin-top: 0px;
+	text-align: center;
+	font-size: 13px;
+	color: black;
+}
+
+.unknown-reward{
+	height: 95px;
+	width: 130px;
+	margin-left: 9px;
+	margin-right: 9px;
+	border: 1px solid lightgrey;
+	text-align: center;
+	padding-top: 35px;
+	font-size: 50px;
+	color: black;
+}
+
+.background{
+	float: left;
+	width: 100%;
+	height: 485px;
+	background-color: rgb(173, 216, 230, 0.1);
+}
