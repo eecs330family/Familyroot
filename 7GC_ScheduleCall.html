@@ -7,7 +7,7 @@
     </head>
     <body>
         <div id= "screen">
-            <div class = "head-bar">
+            <div class = "head-bar2">
                 <a href = "8_Grandchild_Main_Call.html">
                     <div class="back-button"><i class="material-icons">arrow_back_ios</i></div>
                 </a>
@@ -35,16 +35,17 @@
                         <div id="timezone1"> (Invitee's time will appear here)</div>
                       </form>
                 </p>
-
-                  <form action="/action_page.php">
+                <p>
+                    <form action="/action_page.php">
                       Second Choice Time:
-                      <input type="datetime-local" name="time2">
+                      <input id="timezone0" type="datetime-local" name="time2" onchange="timezoneFunc2()" required>
+          
+                      <div id="timezone2"> (Invitee's time will appear here)</div>
                     </form>
+                </p>
 
-                  <form action="/action_page.php">
-                      Third Choice Time:
-                      <input type="datetime-local" name="time3">
-                    </form>
+                
+
 
                 <label for = "urgency">Urgency:</label>
                 <form action="/action_page.php">

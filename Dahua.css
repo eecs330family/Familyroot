@@ -37,6 +37,27 @@ body {
 	color: white;
 }
 
+.head-bar2 {
+	height: 45px;
+	width: 300px;
+	background-color: lightblue;
+	font-family: Avenir, sans-serif;
+	color: white;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+}
+.head-bar2 h1{
+	padding-top: 2.75px;
+}
+
+.head-bar2 p{
+	padding-top: 10px;
+	margin-right: 25px;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	color: white;
+}
+
 .back-button {
 	float: left;
 	margin-top: 9px;
@@ -101,6 +122,11 @@ body {
 }
 
 #timezone1 {
+	float: top;
+	font-size: 10px;
+	margin-top: 5px;
+}
+#timezone2 {
 	float: top;
 	font-size: 10px;
 	margin-top: 5px;

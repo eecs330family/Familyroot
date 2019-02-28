@@ -30,3 +30,16 @@ function timezoneFunc() {
 	document.getElementById("timezone1").innerHTML = "Beijing Time: " + time.toLocaleDateString("en-US" , options);
 
 }
+
+function timezoneFunc2() {
+	var options = {year: 'numeric', month: '2-digit', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+	var timee = document.getElementById("timezone0").value;
+	timee = timee + ":00";
+	plchd = new Date(timee);
+	timee = plchd.getTime() + 8 * 3600 * 1000;
+	var time = new Date(timee);
+	console.log(time);
+
+	document.getElementById("timezone2").innerHTML = "Beijing Time: " + time.toLocaleDateString("en-US" , options);
+
+}
