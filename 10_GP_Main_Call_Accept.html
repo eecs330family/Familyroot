@@ -6,13 +6,13 @@
            rel="stylesheet">
     </head>
 
-    <body>
+    <body onload = "setTimeout(exec, 30)">
         <div id="screen-main">
             <div class="profile-bar">
                 <div class="profile-pic-background">
                     <a a href="5_Profile_Page.html"><img src="images/IMG_3299.jpg" /></a>
                 </div>
-                <div class="user-name">
+                <div id = "username" class="user-name">
                     <h3>Dahua</h3>
                 </div>
                 <div class="add-friend">
@@ -21,11 +21,11 @@
             </div>
             <div class="left-side">
                 <div id="left-side-box1">
-                    <h1> Schedule a Call</h1> 
-                    
+                    <h1> Schedule a Call</h1>
+
                 </div>
                 <div id="left-side-box2">
-                    <h1> Make a Call</h1> 
+                    <h1> Make a Call</h1>
                 </div>
             </div>
             <div class="right-side">
@@ -41,7 +41,7 @@
                 </div>
 
             </div>
-            
+
             <div class="bottom-bar-current">
                 <div class="bottom-item">
                     <h3>CALL</h3>
@@ -60,5 +60,12 @@
                 </a>
             </div>
         </div>
+        <script>
+            function exec(){
+                var text = localStorage.getItem("inputJSON");
+                obj = JSON.parse(text);
+                document.getElementById("username").innerHTML = '<h3>' + obj.usrname + '</h3>';
+            }
+        </script>
     </body>
 </html>
