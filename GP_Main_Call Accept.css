@@ -1,5 +1,5 @@
-/* 
-	Global classes 
+/*
+	Global classes
 					*/
 body {
 	background-image: url("images/iphoneOL.jpg");
@@ -14,6 +14,55 @@ body {
 	margin: 105px 23px;
 }
 
+.call {
+    background-color: white;
+    height: 60px;
+    width: 137.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    box-shadow: 4px 4px;
+}
+
+.call-text {
+    height: 60px;
+    width: 100px;
+    float: left;
+}
+
+#call-time {
+    font-size: 14px;
+    width: 95px;
+    margin-left: 5px;
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+#caller {
+    font-size: 14px;
+    width: 95px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.call-icon {
+    background-color: rgb(243, 102, 114, 0.726);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 1.25px;
+    margin-right: 0px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+.call-icon i{
+    margin-top: 5px;
+    margin-left: 5px;
+    color: white;
+}
+
 .head-bar {
 	height: 45px;
 	width: 300px;
@@ -22,12 +71,12 @@ body {
 	color: rgb(243, 102, 114, 0.726);
 	text-shadow: 1px 1px #000000;
 	text-align: center;
-	
+
    }
 .head-bar h1{
 	padding-top: 2.75px;
 }
-   
+
 .back-button {
 	width: 50px;
 	height: 25px;
@@ -36,7 +85,7 @@ body {
 	margin-left: 7px;
 	color: white;
 }
-   
+
 
 #vlog-format{
 	float: left;
@@ -68,8 +117,8 @@ body {
 	margin-top: 0px;
 }
 
-.material-icons.md-40 { 
-	font-size: 40px; 
+.material-icons.md-40 {
+	font-size: 40px;
 	color: red;
 }
 
