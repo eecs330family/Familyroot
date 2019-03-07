@@ -25,7 +25,6 @@ function timezoneFunc() {
 	plchd = new Date(timee);
 	timee = plchd.getTime() + 8 * 3600 * 1000;
 	var time = new Date(timee);
-	console.log(time);
 
 	document.getElementById("timezone1").innerHTML = "Beijing Time: " + time.toLocaleDateString("en-US" , options);
 
@@ -38,7 +37,6 @@ function timezoneFunc2() {
 	plchd = new Date(timee);
 	timee = plchd.getTime() + 8 * 3600 * 1000;
 	var time = new Date(timee);
-	console.log(time);
 
 	document.getElementById("timezone2").innerHTML = "Beijing Time: " + time.toLocaleDateString("en-US" , options);
 

@@ -1,5 +1,5 @@
-/* 
-	Global classes 
+/*
+	Global classes
 					*/
 body {
 	background-image: url("images/iphoneOL.jpg");
@@ -14,6 +14,55 @@ body {
 	margin: 105px 23px;
 }
 
+.call {
+    background-color: white;
+    height: 60px;
+    width: 137.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    box-shadow: 4px 4px;
+}
+
+.call-text {
+    height: 60px;
+    width: 100px;
+    float: left;
+}
+
+#call-time {
+    font-size: 14px;
+    width: 95px;
+    margin-left: 5px;
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+#caller {
+    font-size: 14px;
+    width: 95px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.call-icon {
+    background-color: rgb(243, 102, 114, 0.726);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 1.25px;
+    margin-right: 0px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+.call-icon i{
+    margin-top: 5px;
+    margin-left: 5px;
+    color: white;
+}
+
 .head-bar {
 	height: 45px;
 	width: 300px;
@@ -22,12 +71,12 @@ body {
 	color: rgb(243, 102, 114, 0.726);
 	text-shadow: 1px 1px #000000;
 	text-align: center;
-	
+
    }
 .head-bar h1{
 	padding-top: 2.75px;
 }
-   
+
 .back-button {
 	width: 50px;
 	height: 25px;
@@ -36,7 +85,7 @@ body {
 	margin-left: 7px;
 	color: white;
 }
-   
+
 
 #vlog-format{
 	float: left;
@@ -68,8 +117,8 @@ body {
 	margin-top: 0px;
 }
 
-.material-icons.md-40 { 
-	font-size: 40px; 
+.material-icons.md-40 {
+	font-size: 40px;
 	color: red;
 }
 
@@ -120,22 +169,25 @@ body {
 }
 
 .add-friend {
-	float: left;
-	height: 50px;
-	width: 50px;
+	float: right;
+	height: 75px;
+	width: 75px;
 	border-radius: 50%;
 	background-color: pink;
-	margin-left: 40px;
-	margin-top: 25px;
+	margin-right: 10px;
+	margin-top: 10px;
+	border-style: outset;
+	border-width: 2.5px;
 }
 
 
-.add-friend h3{
-	font-size: 36px;
+.add-friend p{
+	font-size: 16px;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 13px;
 	padding-top: 0px;
-	color: white;
+	color: gray;
+	font-weight: bold;
 }
 
 .video {
@@ -252,9 +304,10 @@ body {
 
 }
 
-.right-side h2{
-	font-size: 25px;
+.right-side h1{
+	font-size: 28px;
 	margin-bottom: 10px;
+	margin-top: 130px;
 }
 
 .responds{
@@ -304,7 +357,73 @@ body {
 	padding-top: 30px;
 	font-size: 30px;
 }
+<<<<<<< HEAD
 
+.mid{
+	float: left;
+	width: 300px;
+	height: 380px;
+}
+.profile-pic-place{
+	float: left;
+	width: 300px;
+	height: 200px;
+}
+.caller-profile-pic{
+	margin-top: 65px;
+	margin-left: 75px;
+	float: left;
+	height: 150px;
+  	width: 150px;
+  	background-color: rgb(245, 235, 235);
+  	border-radius: 80%;
 
+}
+.caller-profile-pic img{
+	height: 150px;
+	width: 150px;
+	border-radius: 80%;
 
+}
+.word-below{
+	float: left;
+	width: 300px;
+	height: 60px;
+	padding-top: 5px;
+	text-align: center;
+}
 
+.button-wrapper{
+	float: left;
+	width: 300px;
+	height: 115px;
+}
+
+.call-accept{
+	float: left;
+	width: 90px;
+	height: 60px;
+	margin-left: 40px;
+	margin-right: 20px;
+	background-color:  rgb(243, 102, 114, 0.5);
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+.call-rej{
+	float: left;
+	width: 90px;
+	height: 60px;
+	margin-left: 20px;
+	margin-right: 40px;
+	background-color:  rgb(243, 102, 114, 0.5);
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+<<<<<<< HEAD
+=======
+>>>>>>> Lexi
+=======
+>>>>>>> klroot
