@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>RegisterA</title>
+        <link rel="stylesheet" type="text/css" href="Dahua.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+           rel="stylesheet">
+    </head>
+    <body>
+        <div id= "screen">
+          <div class="profile-bar-1">
+              <a a href="18_GP_Main.html">
+                <div class="wrapper1">
+                  <div class="back-button2">
+                    <i class="material-icons">arrow_back_ios</i>
+                  </div>
+                  <div class="backtocall">Back <br> To <br> Call</div>
+                </div>
+              </a>
+              <p> Schedule A Call </p>
+            </div>
+
+            <div class = "container">
+              <div class="required"> *Required </div>
+              <br>
+                <label for = "invitee"><b>*I'm calling:</b></label>
+                    <form action="/action_page.php">
+                    <select name="invitee">
+                        <option value="dahua">Grandson</option>
+                        <option value="dashu">Granddaughter</option>
+                    </select>
+                  </form>
+
+                  <label for = "Time"><b>*Select Time:</b></label>
+                    <div class="select_time">
+                        <a a href="14_GP_Schedule_Time_A.html"> <b> *1st choice </b> </a>
+                        <a a href="14_GP_Schedule_Time_B.html"> <b> 2nd choice </b> </a>
+                    </div>
+
+                <div class="urgency">
+                  <label for = "urgency">Urgency:</label>
+                  <form action="/action_page.php">
+                    <select name="urgency">
+                      <option value="high">High</option>
+                      <option value="moderate">Moderate</option>
+                      <option value="low">Low</option>
+                    </select>
+                  </form>
+                </div>
+
+                  <label for = "massage">Message:</label>
+                  <input type = "text" name = "msg" required>
+
+
+                <div class="popup" onclick= "myFunction()">
+                      <button type = "send" class ="submitbtn"><b> Send Invite</b> </button>
+                      <span class="popuptext" id="myPopup">Your invite is sent!</span>
+                </div>
+            </div>
+        </div>
+
+    <script src="Vlog_Video.js"></script>
+    </body>
+</html>
