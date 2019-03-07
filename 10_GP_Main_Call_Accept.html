@@ -12,7 +12,7 @@
                 <div class="profile-pic-background">
                     <a a href="12_Profile_Page_Call.html"><img src="images/IMG_3299.jpg" /></a>
                 </div>
-                <div id = "username" class="user-name">
+                <div id = "username" class="user-name" onclick="test()">
                     <h3>Dahua</h3>
                 </div>
                 <div class="add-friend">
@@ -28,17 +28,14 @@
                     <h1> Make a Call</h1>
                 </div>
             </div>
-            <div class="right-side">
+            <div id = "rightside", class="right-side">
                 <h2>Jack wants to call you at 8pm today. Accept?</h2>
-                <div class="responds">
+                <button class="responds", onclick="acceptCall()">
                     <p> Accept </p>
-                </div>
-                <div class="responds">
-                    <p> Change Time </p>
-                </div>
-                <div class="responds">
+                </button>
+                <button class="responds", onclick = "rejectCall()">
                     <p> Reject </p>
-                </div>
+                </button>
 
             </div>
 
@@ -61,10 +58,30 @@
             </div>
         </div>
         <script>
+            function test(){
+                if (localStorage.script != 2){
+                    localStorage.script = localStorage.script + 1;
+                } else {
+                    localStorage.script = 0;
+                }
+            }
             function exec(){
                 var text = localStorage.getItem("inputJSON");
                 obj = JSON.parse(text);
                 document.getElementById("username").innerHTML = '<h3>' + obj.usrname + '</h3>';
+                if (localStorage.script == 0){
+                    document.getElementById("rightside").innerHTML = '<h1>No Upcoming Call</h1>';
+                } else if (localStorage.script == 2) {
+                    document.getElementById("rightside").innerHTML = '<h3>Upcoming Calls:</h3><div class="call" id="call-1"><div class="call-text"><p id="call-time"><b>9:00 pm, Tues</b></p><p id="caller">Grandpa</p></div><div class="call-icon"><i class="material-icons">call</i></div></div>';
+                }
+            }
+            function acceptCall(){
+                localStorage.script = 2;
+                document.getElementById("rightside").innerHTML = '<h3>Upcoming Calls:</h3><div class="call" id="call-1"><div class="call-text"><p id="call-time"><b>9:00 pm, Tues</b></p><p id="caller">Grandpa</p></div><div class="call-icon"><i class="material-icons">call</i></div></div>';
+            }
+            function rejectCall(){
+                localStorage.script = 0;
+                document.getElementById("rightside").innerHTML = '<h1>No Upcoming Call</h1>';
             }
         </script>
     </body>
