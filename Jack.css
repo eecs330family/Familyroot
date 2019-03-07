@@ -101,55 +101,69 @@ body {
 .schedule-call-button {
     height: 130px;
     width: 130px;
-    background-color: lightblue;
+    background-color: rgba(5, 115, 148, 0.75);
     border-radius: 50%;
     margin-left: 9.75px;
     margin-top: 40px;
+	box-shadow: 0 6px #999;
+}
+
+.schedule-call-button:hover {
+	background-color: lightblue;
+}
+
+.schedule-call-button:active {
+	box-shadow: 0 5px #666;
+  	transform: translateY(3px);
 }
 
 .schedule-call-button h3 {
     float: left;
-    margin-top:0px;
-    font-size: 14px;
+    margin-top:4px;
+    font-size: 13px;
     align: center;
-    margin-left: 16px;
+    margin-left: 8px;
     color: white;
 }
 
 .schedule-call-button i{
     float: left;
-    margin-top:20px;
+    margin-top:6px;
     font-size: 25px;
-    margin-left: 32.5px;
+    margin-left: 29.5px;
     margin-right: 120px;
-    font-size: 65px;
+    font-size: 60px;
     color: white;
-
 }
-
-
 
 .make-call-button h3 {
     float: left;
-    margin-top:0px;
-    font-size: 14px;
+    margin-top:2px;
+    font-size: 13px;
     align: center;
-    margin-left: 27px;
+    margin-left: 20px;
     color: white;
 }
 
 .make-call-button i{
     float: left;
-    margin-top:22px;
+    margin-top:16px;
     font-size: 25px;
-    margin-left: 32.5px;
+    margin-left: 26.5px;
     margin-right: 120px;
     font-size: 65px;
     color: white;
 
 }
 
+.make-call-button:hover {
+	background-color: lightblue;
+}
 
+.make-call-button:active {
+	box-shadow: 0 5px #666;
+  	transform: translateY(3px);
+}
 
 .make-call-button {
     height: 130px;
@@ -159,6 +173,7 @@ body {
     margin-left: 9.75px;
     margin-top: 40px;
     margin-bottom: 40px;
+	box-shadow: 0 6px #999;
 }
 
 
@@ -335,7 +350,7 @@ body {
     margin-top: 4px;
     margin-left: 10px;
 }
-   
+
 #badge-link {
     color:rgb(120, 85,73);
 }
