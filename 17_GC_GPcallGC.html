@@ -29,12 +29,16 @@
                         <h4>Grandma calling you...</h3>
                     </div>
                     <div class="button-wrapper">
-                        <div class="call-accept">
-                            <h3>Accept</h3>
-                        </div>
-                        <div class="call-rej">
-                            <h3>Reject</h3>
-                        </div>
+                        <a href = "15_Calling_GP.html">
+                            <button class="call-accept">
+                                <h3>Accept</h3>
+                            </button>
+                        </a>
+                        <a href = "8_Grandchild_Main_Call.html">
+                            <button class="call-rej">
+                                <h3>Reject</h3>
+                            </button>
+                        </a>
                     </div>
             </div>
 
@@ -56,10 +60,11 @@
         </div>
         <script>
             function exec(){
-                var text = localStorage.getItem("inputJSON");
+                var text = localStorage.getItem("inputJSON2");
                 obj = JSON.parse(text);
-                document.getElementById("username").innerHTML = '<h3>' + obj.usrname + '</h3>';
+                document.getElementById("user-name").innerHTML = '<h3>' + obj.usrname + '</h3>';
             }
+
         </script>
     </body>
 </html>

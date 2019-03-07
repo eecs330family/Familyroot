@@ -11,7 +11,7 @@
                 <div class="profile-pic-background">
                     <a a href="9_Profile_Page_Grandchild.html"><img src="images/winwin.jpeg" /></a>
                 </div>
-                <div class="user-name", id = "user-name">
+                <div class="user-name", id = "user-name", onclick = "test()">
                     <h3>Jack</h3>
                 </div>
                 <div class="add-friend">
@@ -61,6 +61,16 @@
                 var text = localStorage.getItem("inputJSON2");
                 obj = JSON.parse(text);
                 document.getElementById("user-name").innerHTML = '<h3>' + obj.usrname + '</h3>';
+                setTimeout(newCall, 3000);
+            }
+            function newCall(){
+                if (localStorage.jj != 0){
+                    localStorage.jj = 0;
+                    window.location.href = "17_GC_GPcallGC.html";
+                }
+            }
+            function test(){
+                localStorage.jj = 1;
             }
         </script>
     </body>

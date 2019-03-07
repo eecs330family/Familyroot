@@ -59,11 +59,7 @@
         </div>
         <script>
             function test(){
-                if (localStorage.script != 2){
-                    localStorage.script = localStorage.script + 1;
-                } else {
-                    localStorage.script = 0;
-                }
+                localStorage.script = 1;
             }
             function exec(){
                 var text = localStorage.getItem("inputJSON");
