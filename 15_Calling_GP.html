@@ -1,30 +1,62 @@
 <html>
     <head>
         <title>Dahua</title>
-        <link rel="stylesheet" type="text/css" href="Dahua.css"/>
+        <link rel="stylesheet" type="text/css" href="Calling.css"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
            rel="stylesheet">
     </head>
-    <body>
-        <div id="screen">
-            <div class="head-bar">
-                <a href = "index.html">
-                    <div class="back-button"><i class="material-icons">arrow_back_ios</i></div>
-                </a>
-            </div>
-            <div class = "container2">
-                <b>I am a...</b>
-
-                <a href = "3b_Create_AccountA.html">
-                    <button class = "bigbtn"><b>Grandparent </b></button>
-                </a>
-                <a href = "3b_Create_AccountB.html">
-                    <button class = "bigbtn"><b> Grandchild </b></button>
-                </a>
-            </div>
+    <body onload = init()>
+        <div class = "screeen" id="screen" onmousemove="showbutton()" >
+            <img id = "photo" src = "images/Granny Dahua Vert.png" >
+            <button class = "btn1", id = "button1" onclick = "changetext()"><i class="material-icons">mic_off</i></button>
+            <button class = "btn2", id = "button2"><i class="material-icons">stop</i></button>
+            <button class = "btn3", id = "button3" onclick = "changephoto()"><i class="material-icons">loop</i></button>
         </div>
     </body>
-
+    <script>
+        function init(){
+            document.getElementById("screen").ss = 0;
+        }
+        function showbutton(){
+            document.getElementById("button1").style.visibility = "visible";
+            document.getElementById("button2").style.visibility = "visible";
+            document.getElementById("button3").style.visibility = "visible";
+            setTimeout(fade, 3000);
+        }
+        function fade(){
+            document.getElementById("button1").style.visibility = "hidden";
+            document.getElementById("button2").style.visibility = "hidden";
+            document.getElementById("button3").style.visibility = "hidden";
+        }
+        function changetext(){
+            var current = document.getElementById("button1").innerHTML;
+            if (current == '<i class="material-icons">mic</i>'){
+                document.getElementById("button1").innerHTML = '<i class="material-icons">mic_off</i>';
+            }
+            else{
+                document.getElementById("button1").innerHTML = '<i class="material-icons">mic</i>';
+            }
+        }
+        function changetext(){
+            var current = document.getElementById("button1").innerHTML;
+            if (current == '<i class="material-icons">mic</i>'){
+                document.getElementById("button1").innerHTML = '<i class="material-icons">mic_off</i>';
+            }
+            else{
+                document.getElementById("button1").innerHTML = '<i class="material-icons">mic</i>';
+            }
+        }
+        function changephoto(){
+            if (document.getElementById("screen").ss == 0){
+                document.getElementById("photo").src = "images/backcamera.jpeg";
+                document.getElementById("screen").ss = 1;
+            }
+            else{
+                document.getElementById("photo").src = "images/Granny Dahua Vert.png";
+                document.getElementById("screen").ss = 0;
+            }
+        }
+    </script>
 </html>
 <!--
 * bg iphone img is 363x762px
