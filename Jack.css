@@ -101,10 +101,15 @@ body {
 .schedule-call-button {
     height: 130px;
     width: 130px;
-    background-color: lightblue;
+    background-color: rgba(5, 115, 148, 0.75);
     border-radius: 50%;
     margin-left: 9.75px;
     margin-top: 40px;
+}
+
+.schedule-call-button:hover {
+	background-color: lightblue;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .schedule-call-button h3 {
@@ -149,7 +154,10 @@ body {
 
 }
 
-
+.make-call-button:hover {
+	background-color: lightblue;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 .make-call-button {
     height: 130px;
@@ -335,7 +343,7 @@ body {
     margin-top: 4px;
     margin-left: 10px;
 }
-   
+
 #badge-link {
     color:rgb(120, 85,73);
 }
