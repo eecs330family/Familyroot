@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Dahua</title>
+        <link rel="stylesheet" type="text/css" href="Jack.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+           rel="stylesheet">
+    </head>
+
+    <body onload = "setTimeout(exec, 30)">
+        <div id="screen-main">
+            <div class="profile-bar">
+                    <div class="profile-pic-background">
+                        <a a href="9_Profile_Page_Grandchild.html"><img src="images/winwin.jpeg" /></a>
+                    </div>
+                    <div class="user-name", id = "user-name">
+                        <h3>Jack</h3>
+                    </div>
+                    <div class="add-friend">
+                        <h3>+</h3>
+                    </div>
+            </div>
+            <div class="mid">
+                    <div class="profile-pic-place">
+                        <div class="caller-profile-pic">
+                            <img src="images/IMG_3299.jpg" />
+                        </div>
+                    </div>
+                    <div class="word-below">
+                        <h4>Grandma calling you...</h3>
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="call-accept">
+                            <h3>Accept</h3>
+                        </div>
+                        <div class="call-rej">
+                            <h3>Reject</h3>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="bottom-bar-current">
+                    <div class="bottom-item">
+                        <h3>CALL</h3>
+                    </div>
+                </div>
+                <div class="bottom-bar">
+                    <div class="bottom-item">
+                        <h3>CHAT</h3>
+                    </div>
+                </div>
+                <div class="bottom-bar">
+                    <div class="bottom-item">
+                        <h3>VLOG</h3>
+                    </div>
+            </div>
+        </div>
+        <script>
+            function exec(){
+                var text = localStorage.getItem("inputJSON");
+                obj = JSON.parse(text);
+                document.getElementById("username").innerHTML = '<h3>' + obj.usrname + '</h3>';
+            }
+        </script>
+    </body>
+</html>

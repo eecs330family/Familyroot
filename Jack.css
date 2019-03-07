@@ -339,3 +339,68 @@ body {
 #badge-link {
     color:rgb(120, 85,73);
 }
+
+
+.mid{
+	float: left;
+	width: 300px;
+	height: 380px;
+}
+.profile-pic-place{
+	float: left;
+	width: 300px;
+	height: 200px;
+}
+.caller-profile-pic{
+	margin-top: 65px;
+	margin-left: 75px;
+	float: left;
+	height: 150px;
+  	width: 150px;
+  	background-color: rgb(245, 235, 235);
+  	border-radius: 80%;
+
+}
+.caller-profile-pic img{
+	height: 150px;
+	width: 150px;
+	border-radius: 80%;
+
+}
+.word-below{
+	float: left;
+	width: 300px;
+	height: 60px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.button-wrapper{
+	float: left;
+	width: 300px;
+	height: 115px;
+}
+
+.call-accept{
+	float: left;
+	width: 90px;
+	height: 60px;
+	margin-left: 40px;
+	margin-right: 20px;
+	background-color:   rgba(5, 115, 148, 0.397);
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+.call-rej{
+	float: left;
+	width: 90px;
+	height: 60px;
+	margin-left: 20px;
+	margin-right: 40px;
+	background-color:  rgba(5, 115, 148, 0.397);
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
