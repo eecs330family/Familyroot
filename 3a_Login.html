@@ -17,13 +17,24 @@
             </div>
             <div class = "container">
                 <label for = "usrname"><b>User Name:</b></label>
-                <input type = "text" name = "usrname" required>
+                <input type = "text" name = "usrname" id = "loginusr" required>
 
                 <label for = "psw"><b>Password:</b></label>
-                <input type = "password" name = "psw" required>
+                <input type = "password" name = "psw" id = "loginpsw" required>
 
-                <button type = "submit"><b> Login</b> </button>
+                <button type = "submit" onclick = "login()"><b> Login</b> </button>
             </div>
         </div>
+        <script>
+            function login(){
+                var usrname = document.getElementById("loginusr").value;
+                var psw = document.getElementById("loginpsw").value;
+                if ((usrname == "demo1") && (psw = "demo1")){
+                    window.location.href = "10_GP_Main_Call_Accept.html";
+                } else if ((usrname == "demo2") && (psw = "demo2")) {
+                    window.location.href = "8_Grandchild_Main_Call.html"
+                }
+            }
+        </script>
     </body>
 </html>

@@ -15,18 +15,22 @@
     </body>
     <script>
         function init(){
+            document.getElementById("screen").mouseMoved = 0;
             document.getElementById("screen").ss = 0;
         }
         function showbutton(){
             document.getElementById("button1").style.visibility = "visible";
             document.getElementById("button2").style.visibility = "visible";
             document.getElementById("button3").style.visibility = "visible";
-            setTimeout(fade, 3000);
+            document.getElementById("screen").mouseMoved = document.getElementById("screen").mouseMoved + 1;
+            setTimeout(fade, 1500, document.getElementById("screen").mouseMoved);
         }
-        function fade(){
-            document.getElementById("button1").style.visibility = "hidden";
-            document.getElementById("button2").style.visibility = "hidden";
-            document.getElementById("button3").style.visibility = "hidden";
+        function fade(count){
+            if (count == document.getElementById("screen").mouseMoved){
+                document.getElementById("button1").style.visibility = "hidden";
+                document.getElementById("button2").style.visibility = "hidden";
+                document.getElementById("button3").style.visibility = "hidden";
+            }
         }
         function changetext(){
             var current = document.getElementById("button1").innerHTML;
