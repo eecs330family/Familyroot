@@ -132,7 +132,7 @@ function choosetime9(){
 	}
 	else if (timechosen9 ==1){
 		document.getElementById("time-button-9").style.backgroundColor = "pink";
-		timechosen8 = 0;
+		timechosen9 = 0;
   }
 }
 
@@ -140,7 +140,7 @@ function choosetime10(){
 	if (timechosen10 ==0 && (timechosen1 + timechosen2 + timechosen3 + timechosen4 + timechosen5 +
     timechosen6 + timechosen7 + timechosen8 + timechosen9 + timechosen10 + timechosen11 + timechosen12) < 1){
 		document.getElementById("time-button-10").style.backgroundColor = "rgb(243, 102, 114, 0.726)";
-		timechosen9 = 1;
+		timechosen10 = 1;
 	}
 	else if (timechosen10 ==1){
 		document.getElementById("time-button-10").style.backgroundColor = "pink";

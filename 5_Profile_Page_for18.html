@@ -7,47 +7,56 @@
     </head>
 
     <body onload = "setTimeout(exec, 30)">
-        <div class="container1">
-          <div class="head-bar">
-            <a href = "18_GP_Main.html">
-              <div class="back-button"><i class="material-icons">arrow_back_ios</i>
+      <div id="screen-main">
+        <div class="container2-new">
+          <div class ="background-pic-new">
+              <img src="images/Granny Dahua.jpeg" width="300" height="300">
+          </div>
+          <div class="head-bar-new">
+            <a href = "10_GP_Main_Call_Accept.html">
+              <div class="back-button-new"><i class="material-icons">arrow_back_ios</i>
               </div>
             </a >
+            <a id="badge-link-new" href = "11_Grandma_Badge.html"><div class="badge-new">
+                <b><p>Badge</p></b>
+              </div></a>
+            <img class="profile-page-pic-new" src="images/Granny Dahua.jpeg" width="300" height="300">
+            <div class="profile-page-nick-name-new"><h3>Dahua</h3></div>
           </div>
-
-            <div class="card-profile">
-              <img src="images/Granny Dahua.jpeg" width="300" height="300">
-
-              <div class="card_name" id = "card_name">
-                <span>Dahua</span>
-              </div>
-            </div>
-
-            <div class="user-info">
-                  <div class="user-stats" id = "username">
+        </div>
+          <div class="container3-new">
+            <div class="card-profile-new">
+              <div class="user-info-new">
+                  <div class="user-stats-new" id = "username-new">
                     <strong>Username:</strong>
                     <span>DaHua_!</span>
                   </div>
 
-                  <div class="user-stats">
+                  <div class="user-stats-new">
                     <strong>Area:</strong>
                     <span>Shanghai, China</span>
                   </div>
 
-                  <div class="user-stats">
+                  <div class="user-stats-new">
                       <strong>I Am A:</strong>
                       <span>Grandma</span>
                   </div>
-
-                </div>
               </div>
+              </div>
+            </div>
+        </div>
     </body>
     <script>
         function exec(){
-            var text = localStorage.getItem("inputJSON");
+            var text = localStorage.getItem("inputJSON2");
             obj = JSON.parse(text);
             document.getElementById("card_name").innerHTML = '<span>' + obj.name + '<span>';
             document.getElementById("username").innerHTML = '<strong>Username:</strong><span>' + obj.usrname + '</span>';
         }
     </script>
 <html>
+
+
+
+
+
