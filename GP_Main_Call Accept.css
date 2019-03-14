@@ -175,9 +175,8 @@ body {
 	border-radius: 50%;
 	background-color: pink;
 	margin-right: 10px;
-	margin-top: 10px;
-	border-style: outset;
-	border-width: 2.5px;
+	margin-top: 12px;
+	box-shadow: 3px 4px 5px #3E2723;
 }
 
 
@@ -186,7 +185,7 @@ body {
 	text-align: center;
 	margin-top: 13px;
 	padding-top: 0px;
-	color: gray;
+	color: black;
 	font-weight: bold;
 }
 
