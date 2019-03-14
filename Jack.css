@@ -230,7 +230,7 @@ body {
 	background-color: lightblue;
 	float: left;
 	height: 49px;
-	width: 99px;
+	width: 149px;
 	border: 0.5px solid white;
 }
 
@@ -254,7 +254,7 @@ body {
 
 .bottom-bar h3{
 	float: left;
-	width: 99px;
+	width: 149px;
 	height: 25px;
 	margin-top: 12px;
 	text-align: center;
@@ -265,13 +265,13 @@ body {
 	background-color: white;
 	float: left;
 	height: 49px;
-	width: 99px;
+	width: 149px;
 	border: 0.5px solid rgba(5, 115, 148, 0.75);
 }
 
 .bottom-bar-current h3{
 	float: left;
-	width: 99px;
+	width: 149px;
 	height: 25px;
 	margin-top: 12px;
 	text-align: center;
