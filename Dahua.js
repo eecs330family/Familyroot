@@ -77,7 +77,6 @@ function choosetime8(){
 }
 
 function choosetime9(){
-<<<<<<< HEAD
     reset();
     document.getElementById("time-button-9").style.backgroundColor = "rgb(243, 102, 114, 0.726)";
     timechosen = 9;
@@ -89,29 +88,6 @@ function choosetime10(){
     document.getElementById("time-button-10").style.backgroundColor = "rgb(243, 102, 114, 0.726)";
     timechosen = 10;
     checkIfComplete();
-=======
-	if (timechosen9 ==0 && (timechosen1 + timechosen2 + timechosen3 + timechosen4 + timechosen5 +
-    timechosen6 + timechosen7 + timechosen8 + timechosen9 + timechosen10 + timechosen11 + timechosen12) < 1){
-		document.getElementById("time-button-9").style.backgroundColor = "rgb(243, 102, 114, 0.726)";
-		timechosen9 = 1;
-	}
-	else if (timechosen9 ==1){
-		document.getElementById("time-button-9").style.backgroundColor = "pink";
-		timechosen9 = 0;
-  }
-}
-
-function choosetime10(){
-	if (timechosen10 ==0 && (timechosen1 + timechosen2 + timechosen3 + timechosen4 + timechosen5 +
-    timechosen6 + timechosen7 + timechosen8 + timechosen9 + timechosen10 + timechosen11 + timechosen12) < 1){
-		document.getElementById("time-button-10").style.backgroundColor = "rgb(243, 102, 114, 0.726)";
-		timechosen10 = 1;
-	}
-	else if (timechosen10 ==1){
-		document.getElementById("time-button-10").style.backgroundColor = "pink";
-		timechosen10 = 0;
-  }
->>>>>>> 9dff01aa0fa14bf075617dc2b0814ea2811ac90d
 }
 
 
