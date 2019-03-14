@@ -4,8 +4,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
            rel="stylesheet">
     </head>
-
-    <body onload = "setTimeout(exec, 30)">
+    <body>
         <div id="screen-main">
             <div class="profile-bar-2">
                 <a a href="13_GM_ScheduleCall.html">
@@ -21,7 +20,7 @@
             <div class="set-time">
                 <h3>First Choice</h3>
                 <p>Pick Your Time</p>
-                <input class="timezone-gp" type="date" name="time-gp-1" onchange="timezoneFunc()" required>
+                <input id = "settime" class="timezone-gp" type="date" name="time-gp-1" onchange = "changed()" required>
             </div>
             <div class="set-specific-time">
                 <div class="time-block-1">
@@ -47,11 +46,9 @@
                 <button class="time-range-button-2" id="time-range-button-pm" onclick="timepm()">pm</button>
                 </div>
                 <div class="their-time">
-                    <div class="timezone3">Invitee's Time Here</div>
+                    <div class="timezone3" id = "inviteetime">Invitee's Time Here</div>
                 </div>
-                <a a href="13_GM_ScheduleCall.html"><button class="ok">ok</button></a>
+                <a href="13_GM_ScheduleCall.html"><button class="ok" onclick = "storetime()">ok</button></a>
         </div>
-
-    
     <script src="Dahua.js"></script>
     </body>

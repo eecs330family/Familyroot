@@ -179,7 +179,7 @@ body {
 	margin-bottom: 10px;
 	padding-top: 5px;
 	height: 25px;
-	width: 110px;
+	width: 200px;
 	border: 2px solid rgb(205 153 97);
 	border-style: outset;
 	font-size: 15px;
@@ -188,7 +188,12 @@ body {
 }
 
 .urgency {
+	float: left;
 	padding-top: 20px;
+}
+
+.massage {
+	float:left;
 }
 /*
 	Logging in

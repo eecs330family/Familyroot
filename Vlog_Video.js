@@ -25,9 +25,7 @@ function timezoneFunc() {
 	plchd = new Date(timee);
 	timee = plchd.getTime() + 8 * 3600 * 1000;
 	var time = new Date(timee);
-
 	document.getElementById("timezone1").innerHTML = "Beijing Time: " + time.toLocaleDateString("en-US" , options);
-
 }
 
 function timezoneFunc2() {
@@ -37,7 +35,28 @@ function timezoneFunc2() {
 	plchd = new Date(timee);
 	timee = plchd.getTime() + 8 * 3600 * 1000;
 	var time = new Date(timee);
-
 	document.getElementById("timezone2").innerHTML = "Beijing Time: " + time.toLocaleDateString("en-US" , options);
+}
 
+function init(){
+	time1 = localStorage.getItem("inputJSON3");
+	obj = JSON.parse(time1);
+	if (obj){
+		document.getElementById("1st").innerHTML = "<b>" + obj.timed + "</b>";
+	}
+	time2 = localStorage.getItem("inputJSON4");
+	obj = JSON.parse(time2);
+	if (obj){
+		document.getElementById("2nd").innerHTML = "<b>" + obj.timed + "</b>";
+	}
+}
+
+function storefirst(){
+	inputJSON = JSON.stringify({chosen: 1});
+	localStorage.setItem("inputJSON5", inputJSON);
+}
+
+function storesecond(){
+	inputJSON = JSON.stringify({chosen: 2});
+	localStorage.setItem("inputJSON5", inputJSON);
 }

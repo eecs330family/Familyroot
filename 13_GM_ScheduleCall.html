@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
            rel="stylesheet">
     </head>
-    <body>
+    <body onload = "init()">
         <div id= "screen">
           <div class="profile-bar-1">
               <a a href="10_GP_Main_Call_Accept.html">
@@ -32,8 +32,8 @@
 
                   <label for = "Time"><b>*Select Time:</b></label>
                     <div class="select_time">
-                        <a a href="14_GP_Schedule_Time_A.html"> <b> *1st choice </b> </a>
-                        <a a href="14_GP_Schedule_Time_B.html"> <b> 2nd choice </b> </a>
+                        <a href="14_GP_Schedule_Time_A.html"> <div onclick = "storefirst()" id = "1st"><b> *1st choice </b> </div></a>
+                        <a href="14_GP_Schedule_Time_A.html"> <div onclick = "storesecond()" id = "2nd"><b> 2nd choice </b> </div></a>
                     </div>
 
                 <div class="urgency">
@@ -47,9 +47,12 @@
                   </form>
                 </div>
 
+                <br>
+
+                <div class = "massage">
                   <label for = "massage">Message:</label>
                   <input type = "text" name = "msg" required>
-
+              </div>
 
                 <div class="popup" onclick= "myFunction()">
                       <button type = "send" class ="submitbtn"><b> Send Invite</b> </button>
