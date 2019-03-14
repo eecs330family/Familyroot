@@ -291,6 +291,7 @@ body {
 	float: left;
 	width: 150px;
 	height: 380px;
+	background-color: rgb(243, 102, 114, 0.1);
 }
 
 .right-side{
@@ -314,51 +315,80 @@ body {
 	padding-top: 0px;
 	margin-left:10px;
 	margin-right:10px;
-	width: 128px;
-	height: 48px;
-	border: 1px solid white;
+	margin-top:10px;
+	width: 125px;
+	height: 45px;
+	border-style: outset;
+	border-width: 2.5px;
 	margin-bottom: 10px;
 	background-color: rgb(243, 102, 114, 0.5);
+	color: white;
 }
+
 
 .responds p{
 	margin-top: 11.5px;
 	font-size: 20px;
 	font-weight: bold;
-	color: white;
+	color: black;
 
 }
 
 #left-side-box1{
 	float: left;
-	width: 149px;
-	height: 189.5px;
+	width: 145px;
+	height: 185px;
 	text-align: center;
-	border-right: 1px solid white;
-	border-bottom: 1px solid white;
+	vertical-align: middle;
+	border-style: outset;
+	border-width: 2.5px;
+	text-decoration: none;
 	background-color: rgb(243, 102, 114, 0.4);
-	color: black;
+	color: white;
 }
 
 #left-side-box1 h1{
 	padding-top: 30px;
 	font-size: 30px;
+	color: black;
 }
-
-#left-side-box2{
+/*
+.left-button{
 	float: left;
-	width: 149px;
-	height: 189.5px;
+	width: 136px;
+	margin-left: 1px;
+	height: 176px;
 	text-align: center;
 	vertical-align: middle;
-	border-right: 1px solid white;
+	border: 2px solid lightgray;
+
+}
+
+.left_place{
+	float: left;
+	width: 150px;
+	height: 8px;
+
+}
+*/
+#left-side-box2{
+	float: left;
+	width: 145px;
+	height: 185px;
+	text-align: center;
+	vertical-align: middle;
+	border-style: outset;
+	border-width: 2.5px;
 	background-color: rgb(243, 102, 114, 0.4);
+	text-decoration: none;
+	color: white;
 }
 #left-side-box2 h1{
 	padding-top: 30px;
 	font-size: 30px;
+	color: black;
 }
-<<<<<<< HEAD
+
 
 .mid{
 	float: left;
@@ -404,22 +434,118 @@ body {
 	float: left;
 	width: 90px;
 	height: 60px;
-	margin-left: 40px;
-	margin-right: 20px;
+	margin-left: 37.5px;
+	margin-right: 17.5px;
 	background-color:  rgb(243, 102, 114, 0.5);
 	text-align: center;
 	vertical-align: middle;
 	color: white;
+	border-style: outset;
+	border-width: 2.5px;
+	
+}
+
+.call-accept h3{
+	color: black;
 }
 
 .call-rej{
 	float: left;
 	width: 90px;
 	height: 60px;
-	margin-left: 20px;
-	margin-right: 40px;
+	margin-left: 17.5px;
+	margin-right: 37.5px;
 	background-color:  rgb(243, 102, 114, 0.5);
 	text-align: center;
 	vertical-align: middle;
 	color: white;
+	border-style: outset;
+	border-width: 2.5px;
+}
+.call-rej h3{
+	color: black;
+}
+
+.select-gc{
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 260px;
+	height: 40px;
+}
+.select-gc h3{
+	font-size: 26px;
+}
+
+.profile-pic-place1{
+	position: relative;
+	top: 7%;
+	width: 300px;
+	height: 130px;
+
+
+
+}
+
+.caller-profile-pic1{
+	margin-top: 65px;
+	margin-left: 71px;
+	float: left;
+	height: 150px;
+  	width: 150px;
+  	background-color: rgb(245, 235, 235);
+	border-radius: 80%;
+	border-style: outset;
+	border-width: 4px;
+	color: lightgray;
+
+}
+.caller-profile-pic1 img{
+	height: 150px;
+	width: 150px;
+	border-radius: 80%;
+
+}
+
+.gc-name{
+	float:left;
+	position: relative;
+	top: 00%;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 260px;
+	height: 40px;
+	text-align: center;
+
+}
+.gc-name h3{
+	font-size: 26px;
+}
+.end-call{
+	float: left;
+	width: 90px;
+	height: 60px;
+	margin-left: 102.5px;
+	margin-right: 102.5px;
+	background-color:  rgb(243, 102, 114, 0.5);
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	border-style: outset;
+	border-width: 2.5px;
+}
+.end-call h3{
+	color: black;
+}
+.word-below19{
+	float: left;
+	width: 300px;
+	height: 60px;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.word-below19 h3{
+	font-size: 25px;
 }

@@ -55,22 +55,25 @@ body {
 }
 
 .add-friend {
-	float: left;
-	height: 50px;
-	width: 50px;
+	float: right;
+	height: 75px;
+	width: 75px;
 	border-radius: 50%;
 	background-color: rgba(5, 115, 148, 0.397);
-	margin-left: 40px;
-	margin-top: 25px;
+	margin-right: 10px;
+	margin-top: 10px;
+	border-style: outset;
+	border-width: 2.5px;
 }
 
 
 .add-friend h3{
-	font-size: 36px;
+	font-size: 16px;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 13px;
 	padding-top: 0px;
-	color: white;
+	color: gray;
+	font-weight: bold;
 }
 
 
@@ -300,7 +303,6 @@ body {
 }
 
 
-
 .container1 {
 	height: 530px;
 	width: 300px;
@@ -400,24 +402,112 @@ body {
 	float: left;
 	width: 90px;
 	height: 60px;
-	margin-left: 40px;
-	margin-right: 20px;
+	margin-left: 37.5px;
+	margin-right: 17.5px;
 	background-color:   rgba(5, 115, 148, 0.397);
 	text-align: center;
 	vertical-align: middle;
 	color: white;
 	font-size: 14px;
+	border-style: outset;
+	border-width: 2.5px;
 }
 
 .call-rej{
 	float: left;
 	width: 90px;
 	height: 60px;
-	margin-left: 20px;
-	margin-right: 40px;
+	margin-left: 17.5px;
+	margin-right: 37.5px;
 	background-color:  rgba(5, 115, 148, 0.397);
 	text-align: center;
 	vertical-align: middle;
 	color: white;
 	font-size: 14px;
+	border-style: outset;
+	border-width: 2.5px;
+}
+
+.select-gp{
+	float: left;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 260px;
+	height: 40px;
+}
+.select-gp h3{
+	font-size: 23px;
+}
+
+.profile-pic-place1{
+	position: relative;
+	top: 3%;
+	width: 300px;
+	height: 130px;
+
+
+
+}
+
+.caller-profile-pic1{
+	margin-top: 65px;
+	margin-left: 71px;
+	float: left;
+	height: 150px;
+  	width: 150px;
+  	background-color: rgb(245, 235, 235);
+	border-radius: 80%;
+	border-style: outset;
+	border-width: 4px;
+	color: lightgray;
+
+}
+.caller-profile-pic1 img{
+	height: 150px;
+	width: 150px;
+	border-radius: 80%;
+
+}
+.gp-name{
+	float:left;
+	position: relative;
+	top: 00%;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 260px;
+	height: 40px;
+	text-align: center;
+
+}
+.gp-name h3{
+	font-size: 26px;
+}
+.word-below19{
+	float: left;
+	width: 300px;
+	height: 60px;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.word-below19 h3{
+	font-size: 25px;
+}
+
+.end-call{
+	float: left;
+	width: 90px;
+	height: 60px;
+	margin-left: 102.5px;
+	margin-right: 102.5px;
+	background-color:   rgba(5, 115, 148, 0.397);
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	border-style: outset;
+	border-width: 2.5px;
+}
+.end-call h3{
+	color: black;
 }
